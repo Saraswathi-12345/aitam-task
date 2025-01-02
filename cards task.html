@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cards</title>
+    <style>
+        .card-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            gap: 20px;
+        }
+        .card{
+            background-color: #e63838;
+            border: 10px solid rgb(162, 53, 122);
+            border-radius: 20px;
+            text-align: center;
+            width: 300px;
+            height:40vh;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            gap:20px;
+        }
+        .card img{
+           margin-left: 50px;
+           width:200px;
+           height: 200px;
+        }
+        @media (max-width: 768px) {
+        .card-container {
+          justify-content: flex-start;
+        }
+        .card {
+          width: 45%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .card {
+          width: 100%;
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="mountain.jpg" alt="" />
+                <h1>title</h1>
+                <p>description</p>
+        </div>
+        <div class="card">
+            <img src="sky.jpg" alt="" />
+                <h1>title</h1>
+                <p>description</p>
+        </div>
+        <div class="card">
+            <img src="mountain1.jpg" alt="" />
+                <h1>title</h1>
+                <p>description</p>
+        </div>
+        <div class="card">
+            <img src="sky.jpg" alt="" />
+                <h1>title</h1>
+                <p>description</p>
+        </div>
+    </div>
+</body>
+</html>
