@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid images</title>
+    <style>
+        .gallary{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap:20px;
+        }
+        .gallary img{
+            flex: 1 1 calc(25% - 10px);
+            max-width: 85%;
+            border-radius: 50px;
+            transition: opacity 0.3s ease;
+            filter: blur(0.5px);
+            filter: brightness(1);
+            height: 200px;
+            width: 100px;
+        }
+        .gallary img:hover{
+            opacity:30%;
+
+        }
+        @media(max-width:600px){
+            .gallary img{
+                flex: 1 1 calc(100% - 10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallary">
+        <img src="mountain.jpg" alt="" >
+        <img src="mountain1.jpg" alt="" >
+        <img src="sky.jpg" alt="" >
+        <img src="mountain.jpg" alt="" >
+        <img src="mountain1.jpg" alt="">
+        <img src="sky.jpg" alt="" >
+    </div>
+</body>
+</html>
